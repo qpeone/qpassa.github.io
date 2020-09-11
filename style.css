@@ -1,0 +1,66 @@
+/* page d'accueil*/
+.corps{
+    background-color: rgb(230, 233, 53);
+}
+.parent{
+    height: 100%;
+    display: flex;
+}
+
+.moi1{
+    background-image: url(images/moi1.png);
+    background-repeat: no-repeat;
+    height: 950px;
+    width: 33.3%;   
+    border-radius: 50px;
+    border-style: solid;
+    
+}
+.moi1:hover{
+    transform: scale(0.8,0.8);
+}
+
+.boitePresentation{
+    background-color: rgb(12, 95, 77);
+    height: 950px;
+    width: 33.3%;  
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.moi2{
+    background-image: url(images/moi3.jpg);
+    background-repeat: no-repeat;
+    height: 950px;
+    width: 33.3%;  
+    border-radius: 50px;
+    border-style: solid;
+}
+.moi2:hover{
+    transform: scale(0.8,0.8);
+}
+.pPresentation{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 40px;
+    font-family: Comic Sans MS;
+}
+.choix{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* page professionnelle*/
+.formation{
+    display: flex;
+    border-radius: 50px;
+    border-style: inset;
+    background-color: white;
+}
+.intitule{
+    padding-left: 300px;
+}
+.date{
+    padding-left: 200px;
+}
