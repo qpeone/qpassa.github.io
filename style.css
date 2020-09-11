@@ -52,6 +52,10 @@
 }
 
 /* page professionnelle*/
+.barFormation{
+    border-style: inset; 
+    border-radius: 100px;
+}
 .formation{
     display: flex;
     border-radius: 50px;
