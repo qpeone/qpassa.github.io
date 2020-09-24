@@ -1,70 +1,142 @@
-/* page d'accueil*/
-.corps{
-    background-color: rgb(230, 233, 53);
+body{
+    background-image: url("images/background.jpg");
 }
-.parent{
-    height: 100%;
-    display: flex;
-}
+/* titre animé */
 
-.moi1{
-    background-image: url(images/moi1.png);
-    background-repeat: no-repeat;
-    height: 950px;
-    width: 33.3%;   
+/* titre animé arrête là */
+.titre{
+    text-align: center;
+    color: rgb(143, 148, 77);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
     border-radius: 50px;
     border-style: solid;
+    border-color: rgb(83, 61, 29);
+    background-color: rgb(12, 24, 9);
+    margin-top:20px;
+    opacity: 0.85;
+}
+
+/* CSS des images et descriptifs dans la page d'accueil */
+.choix{
+    margin-top: 30px;
+}
+#boutonProPremier{
+    background-color: rgb(94, 68, 31);
+    border-color: rgb(83, 61, 29);
+}
+#boutonArtPremier{
+    background-color:  rgb(94, 68, 31);
+    border-color: rgb(83, 61, 29);
+}
+.parentDescription{
+    margin-top:-40px;
+    margin-left: 100px;
+}
+.row{
+    padding-top: 30px;
+}
+.col{
     
 }
-.moi1:hover{
-    transform: scale(0.8,0.8);
-}
-
-.boitePresentation{
-    background-color: rgb(12, 95, 77);
-    height: 950px;
-    width: 33.3%;  
-    border-radius: 50px;
-    border-style: solid;
-}
-
-.moi2{
-    background-image: url(images/moi3.jpg);
-    background-repeat: no-repeat;
-    height: 950px;
-    width: 33.3%;  
-    border-radius: 50px;
-    border-style: solid;
-}
-.moi2:hover{
-    transform: scale(0.8,0.8);
-}
-.pPresentation{
-    text-align: center;
-    padding-top: 300px;
-    font-size: 40px;
-    font-family: Comic Sans MS;
-}
-.choix{
-    font-size: 20px;
-    text-align: center;
-    padding-top: 200px;
-}
-
-/* page professionnelle*/
-.barFormation{
-    border-style: inset; 
-    border-radius: 100px;
-}
-.formation{
+.taf{
+    margin-left: 30px;
+    margin-top: 30px;
     display: flex;
+}
+.art{
+    display: flex;
+    margin-top:30px;
+    margin-right: 20px;
+}
+.btn{
+    opacity: 0.85;
+    margin-bottom: 20px;
     border-radius: 50px;
-    border-style: inset;
-    background-color: white;
+    border-color: green;
+    color:rgb(12, 24, 9);
 }
-.intitule{
-    padding-left: 300px;
+.btn:hover{
+    height: 80px;
+    color:rgb(144, 224, 123);
 }
-.date{
-    padding-left: 200px;
+#boutonPro{
+    margin-top: 20px;
+    margin-left: 70%;
+    position: relative;
 }
+#boutonPro:hover{
+    color:rgb(196, 255, 140);
+}
+#boutonArt{
+    position: relative;
+    height: 35px;
+    margin-top: 20px;
+    margin-left:5%;
+}
+#boutonPro:hover{
+    color:rgb(196, 255, 140);
+}
+img{
+    height: auto;
+    width: 25%;
+    border-radius: 80px 80px;
+    opacity: 1;
+    padding-top: 12.5px;
+}
+.paragraphe{
+    display: flex;
+    height: 300px;
+    width: 600px;
+    border-radius: 80px 80px;
+    border-color: rgb(83, 61, 29);
+    background-color: rgb(12, 24, 9);
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+    opacity: 0.85;
+    margin-top: 80px;
+}
+img:hover{
+    transform: scale(1.5,1.5);
+}
+/* Div professionnel*/
+.photoArt{
+    margin-left: 75px;
+}
+.photoPro{
+    margin-right: 75px;
+}
+
+.descriptifTaf{
+    
+    color: rgb(143, 148, 77);
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'cursive';
+    margin-left: 30px;
+    padding-top: 50px;
+   
+}
+.paragraphArt{
+
+}
+.descriptifArt{
+    color: rgb(143, 148, 77);
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: justify;
+    font-family: 'cursive'; 
+    margin-top:50px;  
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+
+/*
+#scroller {
+    width: 300px;
+    height: 100px;
+    overflow-x: scroll;
+    scrollbar-color: rebeccapurple green;
+  }
