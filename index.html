@@ -13,68 +13,164 @@
 <body>
     <div class="parent">
         <div class="background"></div>
-
-        <div class="container">
-            <div class="divTitre">
-                <h1 class="titre" > Bienvenue dans mon univers</h1>
-            </div>
-                                              
-            <section class="accueil">               <!-- Page d'accueil -->
-                <div id="descriptif">
-                    <div class="choix">             <!-- Mes boutons -->                                   
-                        <button type="button" class="btn btn-success" id="boutonProPremier">Professionnelle</button><br>
-                        <button type="button" class="btn btn-success" id="boutonArtPremier">Artistique</button>
-                        <button type="button" class="btn btn-success" id="boutonContact">Contact</button>
-                    </div>                  
-                    <div class="parentDescription"> <!-- descriptif professionnel -->
-                        <div class="taf">
-                            <img src="images/moi3.jpg" alt="Péone" class="photoPro" 
-                                onmouseover="mouseOver()" onmouseout="mouseOut()">
-                            <div class="paragraphe">
-                                <p class="descriptifTaf" id="scroller">On m'a appris que la persévérance, l'effort et l'assiduité
-                                    étaient
-                                    toujours
-                                    récompensés, alors avec ces armes j'avance et je poursuis mes rêves tant que mes
-                                    jambes
-                                    me
-                                    tiennent, mon estomac me nourrit et l'univers m'offre l'énergie. Mon parcours n'est
-                                    que
-                                    l'enchaînement de mes rêves accomplis. Pour avoir une idée de ce que je
-                                    suis, de ce que j'ai fais, je vous invite à cliquer sur "professionnelle".
-                                    <button type="button" class="btn btn-success" id="boutonPro">Professionnelle</button>
-                                </p>
-                            </div>
-                        </div>
-                                                    <!-- descriptif artistique -->
-                        <div class="art">
-                            <div class="paragraphe">
-                                <p class="descriptifArt"> J'ai été baigné où l'art est Vie et la vie
-                                    est Art. Où la
-                                    musique
-                                    façonne
-                                    l'âme et apprivoise le physique. Dans un endroit où chaque mouvement était guidé
-                                    par
-                                    un
-                                    son
-                                    ordonné et réfléchi. Je ne peux ommettre de parler de la musique, pour la
-                                    bienveillance
-                                    qu'elle
-                                    a apporté dans ma vie. Ne tardez pas mes ami(es), découvrez ma maison de l'au
-                                    delà(mes ondes de l'au delà).
-                                    en cliquant sur "Artistique". 
-                                    <button type="button" class="btn btn-success"id="boutonArt">Artistique</button>
-                                </p>
-                            </div>
-                            <img src="images/tolosa.jpg" class="photoArt" alt="Ayledy">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="CVPro">
-                <!-- Mon CV professionnel -->
-
-            </section>
+        <div class="divTitre">
+            <h1 class="titre"> Bienvenue dans mon univers</h1>
         </div>
+        <!-- Page d'accueil -->
+        <div class="choix">
+            <!-- Mes boutons -->
+            <div class="divBoutonChoix">
+                <button type="button" class="btn btn-success" id="boutonProPremier">Professionnelle</button><br>
+                <button type="button" class="btn btn-success" id="boutonArtPremier">Artistique</button>
+                <button type="button" class="btn btn-success" id="boutonContact">Contact</button>
+            </div>
+        </div>
+        <!-- descriptif professionnel -->
+        <section class="sectionDescriptif">
+            <div class="taf">
+                <div class="divImage" id="divImageTaf">
+                    <img src="images/moi3.jpg" alt="Péone" class="photoPro" id="img">
+                </div>
+                <div class="divParagraphe" id="divPresentationTaf">
+
+                    <p class="descriptifTaf" id="paragrapheDescriptif">On m'a appris que la persévérance, l'effort
+                        et l'assiduité
+                        étaient
+                        toujours
+                        récompensés, alors avec ces armes j'avance et je poursuis mes rêves tant que mes
+                        jambes
+                        me
+                        tiennent, mon estomac me nourrit et l'univers m'offre l'énergie. Mon parcours n'est
+                        que
+                        l'enchaînement de mes rêves accomplis. Pour avoir une idée de ce que je
+                        suis, de ce que j'ai fais, je vous invite à cliquer sur "professionnelle".
+                        <button type="button" class="btn btn-success" id="boutonPresentation">Professionnelle</button>
+                    </p>
+
+
+                </div>
+            </div>
+            <!-- descriptif artistique -->
+            <div class="art">
+                <div class="divParagraphe" id="divPresentationArt">
+                    <p class="descriptifArt" id="paragrapheDescriptif"> J'ai été baigné où l'art est Vie et la vie
+                        est Art. Où la
+                        musique
+                        façonne
+                        l'âme et apprivoise le physique. Dans un endroit où chaque mouvement était guidé
+                        par
+                        un
+                        son
+                        ordonné et réfléchi. Je ne peux ommettre de parler de la musique, pour la
+                        bienveillance
+                        qu'elle
+                        a apporté dans ma vie. Ne tardez pas mes ami(es), découvrez ma maison de l'au
+                        delà(mes ondes de l'au delà).
+                        en cliquant sur "Artistique".
+                        <button type="button" class="btn btn-success" id="boutonPresentation">Artistique</button>
+                    </p>
+                </div>
+                <div class="divImage" id="divImageArt">
+                    <img src="images/tolosa.jpg" class="photoArt" alt="Ayledy" id="img">
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+        <section class="CVPro">
+            <!-- Mon expérience professionnel -->
+
+            <div class="formation">
+                <h1 class="titreFormation"> Ma Formation</h1>
+                <p class="formationInformatique">2011-2012: Techinicienne d'assistance en Informatique</p>
+            </div>
+            <div class="experience">
+                <h1 class="titreExperience"> Mon expérience</h1>
+                <ul>
+                    <li>2020 : Caissière- AUCHAN- Nouméa- Nouvelle-Calédonie
+                        <ul>
+                            <li>Encaissement</li>
+                            <li>Contrôle du fond de caisse</li>
+                        </ul>
+                    </li>
+                    <li>2019-2020 : Opératrice qualifiée- Calédonienne de Service Bancaire (CSB)- Nouméa/koutio-
+                        Nouvelle-Calédonie
+                        <ul>
+                            <li>Traitement de chèque</li>
+                            <li>Traitement d'auto-prélèvement</li>
+                        </ul>
+                    </li>
+                    <li>2019 : Agent de recensement- ISEE- Nouméa- Nouvelle-Calédonie
+                        <ul>
+                            <li>Reconnaissance des lieux</li>
+                            <li>Interview des habitants</li>
+                        </ul>
+                    </li>
+                    <li>2019 : Institutrice remplaçante- Province Sud- Nouvelle-Calédonie
+                        <ul>
+                            <li>Préparation des cours</li>
+                            <li>Enseignements des savoirs</li>
+                        </ul>
+                    </li>
+                    <li>2019 : Vendeuse polyvalente- Korail- Pont des Français- Nouvelle-Calédonie
+                        <ul>
+                            <li>Encaissement des articles</li>
+                            <li>Rangement des produits en rayons</li>
+                        </ul>
+                    </li>
+                    <li>2018 : Serveuse Banquet- Méridien- Nouméa- Nouvelle-Calédonie
+                        <ul>
+                            <li>Mise en place de décor </li>
+                            <li>Service aux clients</li>
+                        </ul>
+                    </li>
+                    <li>2017 : Opératrice de saisie- CSB- Koutio- Nouvelle-Calédonie
+                        <ul>
+                            <li>Saisie de chèque </li>
+                            <li>Préparation à la saisie</li>
+                        </ul>
+                    </li>
+                    <li>2014-2017: 1ere Vendeuse SPAR- Toulouse- FRANCE
+                        <ul>
+                            <li>Gestion des rayons</li>
+                            <li>Gestion de la caisse</li>
+                            <li>Vente et conseil clientèle…</li>
+                           <span class="remplacement">En remplacement : du Directeur et de son adjoint (lors des congés)</span> 
+                            <li>Gestion administrative du personnel</li>
+                            <li>Encadrement d’équipe</li>
+                            <li>Gestion comptabilité</li>
+                            <li>Prise de commande</li>
+                            <li>Gestion surface de vente</li>
+                            <li>Réception des marchandises</li>
+                            <li>Promotion des produits…</li>
+                        </ul>
+                    </li>
+                    <li>2013 : Inventoriste- GIGA STORE - Lille-FRANCE
+                        <ul>
+                            <li>Inventaire</li>
+                        </ul>
+                    </li>
+                    <li>2013 : Travail indépendant-Toulouse-France
+                        <ul>
+                            <li>Chanteuse guitariste événementiel</li>
+                            <li>Technicienne d’assistance informatique</li>
+                        </ul>
+                    </li>
+                    <li>2012 : Technicienne informatique-Point Net Informatique Baie des citrons-Nouvelle-Calédonie
+                        <ul>
+                            <li>Montage de PC</li>
+                            <li>Dépannage informatique (logiciel et materiel)</li>
+                        </ul>
+                    </li>
+                    <li>2009-2010 : Technicienne informatique (stage)- Province des îles Lifou Nouvelle-Calédonie
+                        <ul>
+                            <li>Résolution de panne</li>
+                            <li>Installation de matériels informatique</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
     </div>
 
 

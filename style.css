@@ -1,12 +1,6 @@
 body{
     background-image: url("images/background.jpg");
 }
-/* titre animé */
-
-/* titre animé arrête là */
-.divTitre{
- 
-}
 .titre{
     text-align: center;
     color: rgb(143, 148, 77);
@@ -19,12 +13,37 @@ body{
     margin-top:20px;
     opacity: 0.85;
 }
-
-/* CSS des images et descriptifs dans la page d'accueil */
-.choix{
-    margin-left: 33.3%;
+/* la page d'accueil */
+.sectionDescriptif{
+    width: 80%;
+    margin-left: 172px;
+}
+.taf{
+    height: 400px;
+    width: 100%;
     margin-top: 30px;
     display: flex;
+}
+.art{
+    height: 400px;
+    width:100%;
+    display: flex;
+    margin-top:30px;
+}
+            /* style des boutons*/
+.choix{
+    background-color: rgb(12, 24, 9);
+    opacity: 0.85;
+    margin-top: 60px;
+    display: flex;
+    width: 380px;
+    border-radius: 30px;
+    margin-left: 35%;
+}
+.divBoutonChoix{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 #boutonProPremier{
     background-color: rgb(156, 118, 64);
@@ -40,27 +59,6 @@ body{
     background-color: rgb(156, 118, 64);
     border-color: rgb(83, 61, 29);
 }
-.parentDescription{
-    margin-top:-40px;
-    margin-left: 40px;
-}
-.row{
-    padding-top: 30px;
-}
-.col{
-    
-}
-.taf{
-    margin-left: 30px;
-    margin-top: 30px;
-    display: flex;
-}
-.art{
-    display: flex;
-    margin-top:30px;
-    margin-right: 20px;
-}
-            /* style des boutons*/
 .btn{
     opacity: 0.85;
     margin-bottom: 20px;
@@ -72,9 +70,11 @@ body{
     height: 80px;
     color:rgb(144, 224, 123);
 }
-#boutonPro{
+#boutonPresentation{
+    margin-left: 33.3%;
     margin-top: 20px;
-    margin-left: 70%;
+}
+#boutonPro{
     position: relative;
 }
 #boutonPro:hover{
@@ -84,65 +84,101 @@ body{
     color:rgb(196, 255, 140);
 }
 #boutonArt{
-    height: 35px;
-    margin-top: 20px;
-    margin-left:80px;
+    
 }
-
-img{
-    height: auto;
-    width: 300px;
+/* Style des Images*/
+.divImage{
+    height: 100%;
+    width:15%;
+}
+#img{
+    height: 100%;
+    width: auto;
     border-radius: 80px 80px;
     padding-top: 12.5px;
-}
-.photoPro{
-    margin-right: 75px;
-}
-.paragraphe{
-    display: flex;
-    height: 300px;
-    width: 600px;
-    border-radius: 80px 80px;
-    border-color: rgb(83, 61, 29);
-    background-color: rgb(12, 24, 9);
-    padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 10px;
-    opacity: 0.85;
-    margin-top: 80px;
 }
 img:hover{
     transform: scale(1.5,1.5);
 }
 .photoArt{
-    margin-left: 75px;
+   margin-left: 120px; 
 }
-
-.descriptifTaf{
+#divImageTaf{
+    margin-left: 175px;
+}
+#divImageArt{
     
+}
+/* style des div des paragraphes et des images */
+.divParagraphe{
+    display: flex;
+    height: 300px;
+    width: 40%;
+    border-radius: 80px 80px;
+    border-color: rgb(83, 61, 29);
+    background-color: rgb(12, 24, 9);
+    opacity: 0.85;
+    margin-top: 80px;
+}
+#divPresentationTaf{
+    margin-left:130px ;
+}
+#divPresentationArt{
+    margin-left:165px ;
+}
+#paragrapheDescriptif{
     color: rgb(143, 148, 77);
     font-weight: bold;
     text-align: justify;
     font-family: 'cursive';
-    margin-left: 30px;
-    padding-top: 50px;
-   
-}
-.paragraphArt{
+    padding-top: 33px;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
-.descriptifArt{
-    color: rgb(143, 148, 77);
+
+/* Style de la section professionnelle*/
+.formation{
+    border-radius: 50px;
+    background-color: rgb(12, 24, 9);
+    opacity: 0.85;
+    width: 500px;
+    margin-top: 140px;
+    margin-left: 100px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+.experience{
+    border-radius: 50px;
+    background-color: rgb(12, 24, 9);
+    opacity: 0.85;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 250px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+.titreExperience{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titreFormation{
+    text-align: center;
+    color: burlywood;
+}
+.formationInformatique{
+    color: burlywood;
+}
+.experience{
+    color: burlywood;
+}
+.remplacement{
+    font-style: italic;
     font-weight: bold;
-    margin-left: 10px;
-    text-align: justify;
-    font-family: 'cursive'; 
-    margin-top:30px;  
-    padding-top: 20px;
-    margin-right: 10px;
-    padding-left: 15px;
 }
-
 /* RESPONSIVE*/
 @media only screen and (max-width: 1025px){
     #boutonPro{
@@ -172,8 +208,27 @@ img:hover{
    }
 @media only screen and (max-width: 375px){
     .divTitre{
-        margin-left: 190px;
+        margin-left: 80px;
         width: 100%;
+    }
+    .choix{
+        margin-left: 90px;
+    }
+    .image{
+        width: 30%;
+    }
+    #img{
+        width: auto;
+        height: 300px;
+    }
+    .paragraphe{
+        
+        height: 200px;
+        width: 70%;
+    }
+    #paragrapheDescriptif{
+     
+       
     }
 }
 /*
